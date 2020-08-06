@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { __, sprintf } from "@wordpress/i18n";
 import { useState, useCallback } from "@wordpress/element";
 import { Modal } from "@wordpress/components";
-import YoastIcon from "../../../images/Yoast_SEO_Icon.svg";
 
 /**
  * Container for the button.
@@ -15,6 +14,18 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid rgba( 0,0,0,0.2 );
+`;
+
+const YoastIcon = styled.span`
+	background-color: var(--yoast-color-primary);
+	mask-image: var(--yoast-svg-icon-yoast);
+	-webkit-mask-image: var(--yoast-svg-icon-yoast);
+	mask-size: 100% 100%;
+	-webkit-mask-size: 100% 100%;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
 `;
 
 /**
